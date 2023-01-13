@@ -1,0 +1,116 @@
+  [
+    {
+    "set": "eend",
+    "card1": "duck",
+    "card2": "duck",
+    "sound": "duck"
+  },
+  {
+    "set": "kitten",
+    "card1": "kitten",
+    "card2": "kitten",
+    "sound": "kitten"
+  },
+  {
+    "set": "big",
+    "card1": "piglet",
+    "card2": "piglet",
+    "sound": "piglet"
+  },
+  {
+    "set": "puppy",
+    "card1": "puppy",
+    "card2": "puppy",
+    "sound": "puppy"
+  },
+  {
+    "set": "kalf",
+    "card1": "calf",
+    "card2": "calf",
+    "sound": "calf"
+  },
+  {
+    "set": "veulen",
+    "card1": "veal",
+    "card2": "veal",
+    "sound": "veal"
+  },
+  {
+    "set": "lam",
+    "card1": "lamb",
+    "card2": "lamb",
+    "sound": "lamb"
+  },
+  {
+    "set": "haan",
+    "card1": "rooster",
+    "card2": "rooster",
+    "sound": "rooster"
+  },
+  {
+    "set": "paard",
+    "card1": "horse",
+    "card2": "horse",
+    "sound": "horse"
+  },
+  {
+    "set": "muis",
+    "card1": "mouse",
+    "card2": "mouse",
+    "sound": "mouse"
+  },
+  {
+    "set": "hond",
+    "card1": "dog",
+    "card2": "dog",
+    "sound": "dog"
+  },
+  {
+    "set": "kat",
+    "card1": "cat",
+    "card2": "cat",
+    "sound": "cat"
+  },
+  {
+    "set": "gans",
+    "card1": "goose",
+    "card2": "goose",
+    "sound": "goose"
+  },
+  {
+    "set": "geit",
+    "card1": "goat",
+    "card2": "goat",
+    "sound": "goat"
+  },
+  {
+    "set": "schaap",
+    "card1": "sheep",
+    "card2": "sheep",
+    "sound": "sheep"
+  },
+  {
+    "set": "varken",
+    "card1": "pig",
+    "card2": "pig",
+    "sound": "pig"
+  },
+  {
+    "set": "koe",
+    "card1": "cow",
+    "card2": "cow",
+    "sound": "cow"
+  },
+  {
+    "set": "kuiken",
+    "card1": "chick",
+    "card2": "chick",
+    "sound": "chick"
+  },
+  {
+    "set": "kip",
+    "card1": "hen",
+    "card2": "hen",
+    "sound": "hen"
+  }
+  ]
