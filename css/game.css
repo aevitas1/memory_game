@@ -1,24 +1,25 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box
+  box-sizing: border-box;
 }
 
 *:before,
 *:after {
-    -webkit-box-sizing: inerhit;
-    box-sizing: inherit; 
+  -webkit-box-sizing: inerhit;
+  box-sizing: inherit;
 }
 html,
 body,
 p {
-    width: 100%;
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: Helvetica, sans-serif;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
 }
-ul, li {
+ul,
+li {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -45,9 +46,9 @@ li p {
   margin: 0 auto;
 }
 
-#field>div {
-position: relative;
-margin: 5px;
+#field > div {
+  position: relative;
+  margin: 5px;
 }
 
 #field img {
@@ -75,8 +76,8 @@ img {
   user-select: none;
 }
 
-
-.covered, .uncovered {
+.covered,
+.uncovered {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -84,8 +85,8 @@ img {
   height: 100%;
 }
 
-.uncovered { 
-  display: none; 
+.uncovered {
+  display: none;
 }
 
 .select {
@@ -117,6 +118,7 @@ main {
   position: relative;
   display: flex;
   height: 10rem;
+  min-width: 1300px;
   width: 70vw;
   margin: 0 auto;
   background: #425664;
@@ -143,11 +145,11 @@ main {
   margin: 1.5rem 0;
   color: white;
   font-size: 2.5rem;
-  font-family: 'Courier new', monospace;
+  font-family: "Courier new", monospace;
 }
 .fa-volume-up::after {
   position: absolute;
-  content:'Disable sound';
+  content: "Disable sound";
   font-size: 1rem;
   width: max-content;
   top: 4rem;
@@ -155,7 +157,7 @@ main {
 }
 .fa-volume-mute::after {
   position: absolute;
-  content:'Enable sound';
+  content: "Enable sound";
   font-size: 1rem;
   width: max-content;
   top: 4rem;
@@ -165,7 +167,7 @@ main {
 #muteAudio {
   position: relative;
   font-size: 4rem;
-  top:3.5rem;
+  top: 3.5rem;
   left: 4rem;
   min-height: 8rem;
   width: 5rem;
@@ -177,10 +179,9 @@ main {
   color: white;
 }
 
-
 @keyframes matchError {
   from {
-    -webkit-box-shadow: 0px 0px 8px 6px red; 
+    -webkit-box-shadow: 0px 0px 8px 6px red;
     box-shadow: 0px 0px 8px 6px red;
   }
   to {
@@ -192,7 +193,7 @@ main {
 @keyframes matchSuccess {
   from {
     transform: scale(1.1);
-    -webkit-box-shadow: 0px 0px 8px 6px green; 
+    -webkit-box-shadow: 0px 0px 8px 6px green;
     box-shadow: 0px 0px 8px 6px green;
   }
   to {
@@ -202,9 +203,82 @@ main {
   }
 }
 
+@media screen and (max-width: 1352px) {
+  #timer {
+    font-size: 2rem;
+  }
+  .top-container {
+    min-width: 100%;
+    width: 100%;
+  }
+  .top-container .select {
+    padding: 2rem 1rem;
+  }
+  .top-container .select p {
+    font-size: 1.5rem;
+  }
+  #muteAudio {
+    bottom: 0;
+    right: 0;
+    left: 1.5rem;
+    font-size: 2.5rem;
+  }
+  #muteAudio::after {
+    top: 2.5rem;
+  }
+  #timer {
+    padding: 0rem 0.2rem;
+    font-size: 1.5rem;
+  }
+}
 @media screen and (min-width: 768px) {
   #field {
     max-width: 768px;
   }
+}
+@media screen and (max-width: 768px) {
+  .top-container {
+    flex-flow: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+  }
+  #timer {
+    margin: 0.8rem 0;
+  }
+  .top-container ul li span {
+    display: flex;
+    justify-content: center;
+  }
 
+  .top-container table {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .top-container .select {
+    padding: 1rem 1rem;
+  }
+  .top-container .select p {
+    padding-bottom: 0.5rem;
+  }
+  .top-container table th,
+  .top-container table td {
+    width: 5rem;
+  }
+  .bottom-container {
+    display: flex;
+    flex-flow: row;
+  }
+  #field {
+  }
+  #muteAudio {
+    top: 0.5rem;
+    min-height: 5rem;
+    left: 0;
+    right: 0;
+  }
 }
